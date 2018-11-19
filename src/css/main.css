@@ -1,0 +1,92 @@
+main{
+    padding: 40px 0;
+}
+
+.col-12{
+    padding: 0;
+    margin: 0;
+}
+
+#container-chutes{
+    background-color: #5ca8db;
+    height: 300px;
+    box-shadow: 2px 2px 10px rgba(10, 10, 10, 0.185);
+    border-radius: 0 4px 0 0;
+    padding: 0;
+}
+
+#sprite-container{
+    background-color: #3498db;
+    height: 300px;
+    border-radius: 4px 0 0 0;
+    box-shadow: 2px 2px 5px rgba(10, 10, 10, 0.205);
+}
+
+#palavra-atual{
+    background-color: #ecf0f1;
+    box-shadow: 2px 2px 10px rgba(10, 10, 10, 0.185);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.palavra__letra{
+    font-size: 30px;
+    color: #3498db;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    border-bottom: 2px solid #3498db;
+    min-width: 20px;
+}
+
+#input-letra{
+    display: inline-block;
+    font-size: 50px;
+    height: 100px;
+    width: 70%;
+    border: none;
+    box-shadow: 1px 2px 10px rgba(10, 10, 10, 0.185);
+    background-color: #1abc9c;
+    color: #fff;
+    text-align: center;
+    padding: 5px 13px;
+    margin: 0;
+}
+
+#sendButton{
+    display: inline-block;
+    width: 28.8%;
+    height: 100px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 50px;
+    background-color: #1abc9c;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+::placeholder{
+    color: inherit;
+    font-size: 30px;
+}
+
+.letra-chutada {
+    display: inline-block;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.116);
+    width: 30px;
+    height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.letra-chutada.certo{
+    background-color: rgb(96, 197, 87);
+}
+
+.letra-chutada.errado{
+    background-color: rgb(197, 87, 87);
+}
+
