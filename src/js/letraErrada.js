@@ -2,8 +2,12 @@
 //funcao que é disparada quando uma letra é enviada
 const letraErrada = (letra) => {
    rodada.erros ++;
-   containerChutes.innerHTML += templateChute(letra, false);
    mudaSprite();
+    console.log(rodada.erros)
+   if(rodada.erros >= 5){
+        alert('Você perdeu! Recomeçando...');
+        startGame();
+   }
 };
 
 const mudaSprite = () => {

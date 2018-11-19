@@ -11,10 +11,17 @@ const rodada = {};
 
 //funcacao de começar rodada
 const startGame = () => {
+    //zerando as coisas
+    containerChutes.innerHTML = '';
+    containerPalavra.innerHTML = '';
+    rodada.erros = 0;
+
     //sorteia a palavra
     rodada.objetoPalavra = sortearPalavra();
 
     if (rodada.objetoPalavra != false) {
+        rodada.controladorPalavraCorreta = rodada.objetoPalavra.emArray;
+
         //variavel que vai ir sendo alterada no jogo, tira as letras e deixa uam string vazia
         rodada.controladorPalavra = rodada.objetoPalavra.emArray.map((letra) => '');
 
@@ -25,7 +32,6 @@ const startGame = () => {
 
         rodada.spanLetras = document.querySelectorAll('.palavra__letra');
 
-        rodada.erros = 0;
     }else{
         console.log('Voce ja venceu todas as partidas!');
     }
